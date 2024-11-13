@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux - Morpion & Puissance 4</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Menu Principal</h1>
+        <button onclick="demarrerJeu('morpion')">Jouer au Morpion</button>
+        <button onclick="demarrerJeu('puissance4')">Jouer au Puissance 4</button>
+    </div>
+
+    <div id="menuMorpion" style="display: none;">
+        <h1>Choisir le mode de jeu</h1>
+        <button onclick="demarrerJeuMorpion('JvJ')">Joueur vs Joueur</button>
+        <button onclick="demarrerJeuMorpion('JvO')">Joueur vs Ordinateur</button>
+    </div>
+
+    <div id="morpion" style="display: none;">
+        <h2 id="message">C'est au tour du joueur X</h2>
+        <div id="grilleMorpion" class="grille"></div>
+        <button id="btnQuitterMorpion">Quitter</button>
+        <button id="btnRecommencerMorpion">Recommencer</button>
+    </div>
+
+    <div id="puissance4" style="display: none;">
+        <h2 id="messagePuissance4">C'est au tour du joueur X</h2>
+        <div id="grillePuissance4" class="grillePuissance4"></div>
+        <button id="btnQuitterPuissance4">Quitter</button>
+        <button id="btnRecommencerPuissance4">Recommencer</button>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
